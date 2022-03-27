@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Components/Header";
+import Login from "./Components/Login";
+import Product from "./Components/Product";
 
-function App() {
+const App=()=>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <Login/>
+      <Product Name="I Phone" Price="120k"></Product>
+      <Product Name="Samsung" Price="130k"></Product>
+      {/* <Product></Product>
+      <Product></Product>
+      <Product></Product>
+      <Product></Product>
+      <Product></Product> */}
     </div>
-  );
+  )
 }
 
 export default App;
