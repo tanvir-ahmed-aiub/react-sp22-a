@@ -9,15 +9,18 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Login from './Components/Login';
 import Event from './Components/Event';
 import Post from './Components/Post';
+import Createstudent from './Components/Createstudent';
 ReactDOM.render(
   <React.StrictMode>
   <Header/>
+  
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/event" element={<Event></Event>}></Route>
           <Route path="/post" element={<Post></Post>}></Route>
+          <Route path="/add" element={<Createstudent></Createstudent>}></Route>
         </Routes>
       </BrowserRouter>
   </React.StrictMode>,
